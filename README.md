@@ -1,6 +1,8 @@
 # pychat
 A python server-client chatter room application based on the works of https://gist.github.com/schedutron. 
 
+Major improvements: Error handling and stability.
+
 ## Installation
 Install python3 on both the server and your client PC.
 
