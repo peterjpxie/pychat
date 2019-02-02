@@ -1,2 +1,5 @@
 # Logs
 *.log
+build
+dist
+__pycache__
