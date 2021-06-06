@@ -8,6 +8,16 @@ import tkinter
 # Parameters
 client_name = ''
 
+#----Now comes the sockets part----
+# HOST = input('Enter host: ')
+# PORT = input('Enter port: ')
+# if not PORT:
+#     PORT = 33000
+# else:
+#     PORT = int(PORT)
+HOST = '127.0.0.1'
+PORT = 33000
+
 global client_socket, msg_list, my_msg, top
 
 def receive():
@@ -46,15 +56,7 @@ def on_closing(event=None):
     try: top.quit()
     except: pass
 
-#----Now comes the sockets part----
-# HOST = input('Enter host: ')
-# PORT = input('Enter port: ')
-# if not PORT:
-#     PORT = 33000
-# else:
-#     PORT = int(PORT)
-HOST = 'g.petersvpn.com'
-PORT = 33000
+
 
 BUFSIZ = 1024
 ADDR = (HOST, PORT)
